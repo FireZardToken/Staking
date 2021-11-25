@@ -78,7 +78,6 @@ contract Flame_Maker_1 is Ownable {
     function deposit(uint256 amountToStake) public {
         require(farmEnabled, "Farming not enabled yet");
         
-        FLAME_Token(ZARDtoken).Approve(address(this), amountToStake);
         FLAME_Token(ZARDtoken).transferFrom(msg.sender, address(this), amountToStake);
         
         updateAccount(msg.sender);
@@ -156,6 +155,12 @@ contract Flame_Maker_1 is Ownable {
     // function to allow admin to set token address..
     function setTokenAddress(address _tokenAddress) public onlyOwner {
         tokenAddress = _tokenAddress;
+    }
+    
+    // function to allow admin to set ZARD token address..
+    function setZARDTokenAddress(address _ZardAadd) public onlyOwner {
+        require(farmEnabled, "Not possible to change after farm enabled, SORRY.");
+        ZARDtoken = _ZardAadd;
     }
     
     // function to allow admin to set dev address..
