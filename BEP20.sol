@@ -22,7 +22,7 @@ contract BEP20 is Context, IBEP20 {
     constructor (string memory name_, string memory symbol_) {
         _name = name_;
         _symbol = symbol_;
-        _decimals = 2;
+        _decimals = 18;
     }
 
     function name() public view returns (string memory) {
