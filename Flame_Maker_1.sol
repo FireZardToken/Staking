@@ -18,7 +18,7 @@ contract Flame_Maker_1 is Ownable {
     address public devAddress = 0x2f3b686576F5eb838414D7D27A6b8F2518Bfe7Ac;
     
     // FLAME token contract...
-    address public tokenAddress = 0x56B1Ba7ec1d061BCBB4377842D1E17a2007D6085;
+    address public tokenAddress = 0x20E2EC85dcF71f1F332370FF6D29c568740dA352;
     
     // ZARD token contract...
     address public ZARDtoken = 0xcF663a0ef9155BdC35a4B918BbEC75E9bFE40D2a;
