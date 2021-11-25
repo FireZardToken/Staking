@@ -6,7 +6,7 @@ import "./SafeMath.sol";
 import "./EnumerableSet.sol";
 import "./Ownable.sol";
 import "./Context.sol";
-import "./FLAM.sol";
+import "./FLAME.sol";
 
 contract Flame_Maker_1 is Ownable {
     using SafeMath for uint256;
