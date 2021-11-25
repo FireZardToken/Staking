@@ -19,7 +19,7 @@ contract FLAME_Token is BEP20, Ownable {
     bool public canAddMinter = true;
     
     constructor() BEP20("FLAME", "$FLAME") {
-        _mint(msg.sender, 1000000 *10**2);
+        _mint(msg.sender, 1000000 *10**18);
     }
     
     /// @notice Creates `_amount` token to `_to`. Must only be called by the Minter.
